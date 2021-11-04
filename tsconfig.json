@@ -1,0 +1,60 @@
+{
+  /* 编译器的选项 */
+  "compilerOptions": {
+    "target": "es5",
+    /* 用来指定项目中的库，代码提示 */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    /* 是否移除注释 */
+    "removeComments": true,
+    /* 用来设置编译后的文件是否使用严格模式 */
+    /* "alwaysStrict": true, */
+    /* 不允许隐式的any类型 */
+    /* "noImplicitAny": true, */
+
+    /* 是否对JS文件进行编译 */
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    /* 设置装饰器 */
+    "experimentalDecorators": true,
+    /* 所有严格检查的总开关 */
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    /* 指定模块化的规范 */
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    /* 不生成编程后的文件 */
+    "noEmit": true,
+    /* 当有错误是不生成编译后的文件 */
+    /* "noEmitOnError": true, */
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@common/*": ["src/common/*"],
+      "@pages/*": ["src/pages/*"],
+      "@router/*": ["src/router/*"]
+    },
+  },
+  /* 包含编译目录 
+    **：代表文件夹， *：代表文件
+  */
+  "include": [
+    "src"
+  ],
+  /* 不需要被编译的文件目录 */
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
