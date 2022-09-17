@@ -19,7 +19,7 @@ function App() {
 				
 				{/* <Index /> */}
 				
-
+				
 			</header>
 		</div>
 	);
